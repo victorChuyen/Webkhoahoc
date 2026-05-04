@@ -1,0 +1,55 @@
+{
+    "name": "CourseMarket VN",
+    "short_name": "CourseMarket",
+    "description": "Nền tảng học trực tuyến hàng đầu Việt Nam",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0f1e",
+    "theme_color": "#2563eb",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        }
+    ],
+    "categories": [
+        "education",
+        "productivity"
+    ],
+    "lang": "vi",
+    "shortcuts": [
+        {
+            "name": "Khóa học của tôi",
+            "short_name": "Khóa học",
+            "description": "Xem các khóa học đã đăng ký",
+            "url": "/student/dashboard",
+            "icons": [
+                {
+                    "src": "/icons/icon-192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Khám phá khóa học",
+            "short_name": "Khám phá",
+            "description": "Tìm kiếm khóa học mới",
+            "url": "/courses",
+            "icons": [
+                {
+                    "src": "/icons/icon-192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+﻿  Γû▓ Next.js 14.2.0
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+> [PWA] Compile server
+> [PWA] Compile server
+> [PWA] Compile client (static)
+> [PWA] Auto register service worker with: D:\AI-KILLS\Webkhoahoc\node_modules\next-pwa\register.js
+> [PWA] Service worker: D:\AI-KILLS\Webkhoahoc\public\sw.js
+> [PWA]   url: /sw.js
+> [PWA]   scope: /
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+./src/app/admin/email-sequences/page.tsx
+56:8  Warning: React Hook useEffect has a missing dependency: 'supabase'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/admin/students/page.tsx
+261:61  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/checkout/[courseId]/page.tsx
+106:8  Warning: React Hook useEffect has missing dependencies: 'router' and 'toast'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+287:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/courses/page.tsx
+206:49  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/courses/[id]/learn/page.tsx
+37:8  Warning: React Hook useEffect has a missing dependency: 'fetchLessonData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/courses/[id]/page.tsx
+104:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+119:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+173:49  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+200:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/instructor/courses/[id]/edit/page.tsx
+31:8  Warning: React Hook useEffect has a missing dependency: 'fetchCourse'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/instructor/dashboard/page.tsx
+104:57  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/student/courses/[id]/learn/page.tsx
+65:8  Warning: React Hook useEffect has missing dependencies: 'router' and 'supabase'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+71:8  Warning: React Hook useEffect has a missing dependency: 'loadNotes'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/student/dashboard/page.tsx
+154:53  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+215:53  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/courses/QnAPanel.tsx
+33:8  Warning: React Hook useEffect has a missing dependency: 'fetchComments'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+167:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/home/HomeContent.tsx
+188:41  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+211:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/layout/Footer.tsx
+62:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/layout/Navbar.tsx
+57:8  Warning: React Hook useEffect has missing dependencies: 'clearUser', 'setUser', and 'supabase'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+139:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+140:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+150:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+156:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+179:43  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+271:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+277:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/32) ...
+   Generating static pages (8/32) 
+   Generating static pages (16/32) 
+   Generating static pages (24/32) 
+ Γ£ô Generating static pages (32/32)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                               Size     First Load JS
+Γöî ╞Æ /                                     9.17 kB         115 kB
+Γö£ Γùï /_not-found                           879 B          88.5 kB
+Γö£ Γùï /admin/dashboard                      111 kB          207 kB
+Γö£ Γùï /admin/email-sequences                6.09 kB         162 kB
+Γö£ ╞Æ /admin/students                       4.87 kB         101 kB
+Γö£ ╞Æ /api/affiliate                        0 B                0 B
+Γö£ ╞Æ /api/ai/crm-email                     0 B                0 B
+Γö£ ╞Æ /api/dev/create-qa-user               0 B                0 B
+Γö£ ╞Æ /api/email-sequences                  0 B                0 B
+Γö£ ╞Æ /api/email/process-sequences          0 B                0 B
+Γö£ ╞Æ /api/email/send                       0 B                0 B
+Γö£ ╞Æ /api/gamification/checkin             0 B                0 B
+Γö£ Γùï /api/gamification/leaderboard         0 B                0 B
+Γö£ ╞Æ /api/payment/create-checkout-session  0 B                0 B
+Γö£ ╞Æ /api/payment/payment-ipn              0 B                0 B
+Γö£ ╞Æ /api/payment/payment-return           0 B                0 B
+Γö£ ╞Æ /api/progress                         0 B                0 B
+Γö£ ╞Æ /auth/callback                        0 B                0 B
+Γö£ ╞Æ /checkout/[courseId]                  6.31 kB         155 kB
+Γö£ Γùï /courses                              8.85 kB         167 kB
+Γö£ ╞Æ /courses/[id]                         189 B          94.6 kB
+Γö£ ╞Æ /courses/[id]/learn                   9.4 kB          165 kB
+Γö£ ╞Æ /instructor/courses/[id]/edit         5.19 kB         161 kB
+Γö£ Γùï /instructor/courses/new               4.42 kB         160 kB
+Γö£ ╞Æ /instructor/dashboard                 189 B          94.6 kB
+Γö£ Γùï /login                                3.71 kB         190 kB
+Γö£ Γùï /payment/failed                       2.03 kB         105 kB
+Γö£ ╞Æ /payment/success                      189 B          94.6 kB
+Γö£ Γùï /register                             3.19 kB         189 kB
+Γö£ Γùï /student/affiliate                    4.83 kB         108 kB
+Γö£ Γùï /student/checkin                      4.83 kB         108 kB
+Γö£ ╞Æ /student/courses/[id]/learn           6.68 kB         155 kB
+Γö£ ╞Æ /student/dashboard                    189 B          94.6 kB
+Γö£ Γùï /student/leaderboard                  3.46 kB         106 kB
+Γöö Γùï /unauthorized                         189 B          94.6 kB
++ First Load JS shared by all             87.6 kB
+  Γö£ chunks/7023-7fe408e91ee33ad9.js       31.5 kB
+  Γö£ chunks/fd9d1056-d01edba84063c778.js   53.6 kB
+  Γöö other shared chunks (total)           2.43 kB
+
+
+╞Æ Middleware                              72.3 kB
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

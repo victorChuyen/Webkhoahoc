@@ -1,0 +1,328 @@
+﻿  Γû▓ Next.js 14.2.0
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+> [PWA] Compile server
+> [PWA] Compile server
+> [PWA] Compile client (static)
+> [PWA] Auto register service worker with: D:\AI-KILLS\Webkhoahoc\node_modules\next-pwa\register.js
+> [PWA] Service worker: D:\AI-KILLS\Webkhoahoc\public\sw.js
+> [PWA]   url: /sw.js
+> [PWA]   scope: /
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+./src/app/admin/email-sequences/page.tsx
+56:8  Warning: React Hook useEffect has a missing dependency: 'supabase'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/admin/students/page.tsx
+261:61  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/checkout/[courseId]/page.tsx
+106:8  Warning: React Hook useEffect has missing dependencies: 'router' and 'toast'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+287:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/courses/page.tsx
+206:49  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/courses/[id]/learn/page.tsx
+37:8  Warning: React Hook useEffect has a missing dependency: 'fetchLessonData'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/courses/[id]/page.tsx
+104:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+119:29  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+173:49  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+200:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/instructor/courses/[id]/edit/page.tsx
+31:8  Warning: React Hook useEffect has a missing dependency: 'fetchCourse'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/instructor/dashboard/page.tsx
+104:57  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/student/courses/[id]/learn/page.tsx
+65:8  Warning: React Hook useEffect has missing dependencies: 'router' and 'supabase'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+71:8  Warning: React Hook useEffect has a missing dependency: 'loadNotes'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/student/dashboard/page.tsx
+154:53  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+215:53  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/courses/QnAPanel.tsx
+33:8  Warning: React Hook useEffect has a missing dependency: 'fetchComments'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+167:25  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/home/HomeContent.tsx
+188:41  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+211:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/layout/Footer.tsx
+62:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/layout/Navbar.tsx
+57:8  Warning: React Hook useEffect has missing dependencies: 'clearUser', 'setUser', and 'supabase'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+139:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+140:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+150:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+156:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+179:43  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+271:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+277:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/32) ...
+   Generating static pages (8/32) 
+node.exe :  Γ¿» useSearchParams() should be wrapped in a suspense boundary at page "/login". 
+Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( Γ¿» useSearchP...ith-csr-bailout:String) [], R 
+   emoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at s (D:\AI-KILLS\Webkhoahoc\.next\server\chunks\618.js:86:11296)
+    at c (D:\AI-KILLS\Webkhoahoc\.next\server\chunks\618.js:86:22230)
+    at _ (D:\AI-KILLS\Webkhoahoc\.next\server\app\(auth)\login\page.js:1:2407)
+    at nj (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:46251)
+    at nM (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:47571)
+    at nN (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:64546)
+    at nI (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:47010)
+    at nM (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:47717)
+    at nM (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:61546)
+    at nN (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:64546)
+
+Error occurred prerendering page "/login". Read more: 
+https://nextjs.org/docs/messages/prerender-error
+
+   Generating static pages (16/32) 
+   Generating static pages (24/32) 
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:150406)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '2122211670'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+ ΓÜá Sending SIGTERM signal to static worker due to timeout of 60 seconds. Subsequent errors 
+may be a result of the worker exiting.
+ ΓÜá Restarted static page generation for /payment/failed because it took more than 60 
+seconds
+ ΓÜá See more info here https://nextjs.org/docs/messages/static-page-generation-timeout
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:150406)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '2122211670'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+ ΓÜá Sending SIGTERM signal to static worker due to timeout of 60 seconds. Subsequent errors 
+may be a result of the worker exiting.
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ ΓÜá Restarted static page generation for /payment/failed because it took more than 60 
+seconds
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:150406)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '2122211670'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+Error: Event handlers cannot be passed to Client Component props.
+  {className: ..., onClick: function onClick, children: ...}
+                            ^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ek (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:140575)
+    at Object.toJSON (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-
+page.runtime.prod.js:12:135764)
+    at stringify (<anonymous>)
+    at eR (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142228)
+    at eE (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server\app-page.runtim
+e.prod.js:12:142707)
+    at Timeout._onTimeout (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\compiled\next-server
+\app-page.runtime.prod.js:12:135484)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7) {
+  digest: '1318070335'
+}
+ ΓÜá Sending SIGTERM signal to static worker due to timeout of 60 seconds. Subsequent errors 
+may be a result of the worker exiting.
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+ Γ¿» Static worker exited with code: null and signal: SIGTERM
+
+> Build error occurred
+Error: Static page generation for /payment/failed is still timing out after 3 attempts. See 
+more info here https://nextjs.org/docs/messages/static-page-generation-timeout
+    at onRestart (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\build\index.js:293:27)
+    at D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\lib\worker.js:95:40
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\export\index.js:450:20
+    at async Span.traceAsyncFn 
+(D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\trace\trace.js:154:20)
+    at async D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\export\index.js:448:24
+    at async Promise.all (index 28)
+    at async exportAppImpl 
+(D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\export\index.js:440:21)
+    at async D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\export\index.js:623:16
+    at async Span.traceAsyncFn 
+(D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\trace\trace.js:154:20)
+    at async D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\build\index.js:1696:42
+    at async Span.traceAsyncFn 
+(D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\trace\trace.js:154:20)
+    at async D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\build\index.js:1543:17
+    at async Span.traceAsyncFn 
+(D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\trace\trace.js:154:20)
+    at async build (D:\AI-KILLS\Webkhoahoc\node_modules\next\dist\build\index.js:366:9)
