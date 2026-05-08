@@ -142,6 +142,25 @@ export const translations = {
         auth_register_and: 'và',
         auth_register_privacy: 'Chính sách bảo mật',
 
+        // Forgot Password
+        auth_forgot_title: 'Quên mật khẩu',
+        auth_forgot_desc: 'Nhập email của bạn để nhận liên kết đặt lại mật khẩu.',
+        auth_forgot_button: 'Gửi yêu cầu',
+        auth_forgot_success: '✅ Đã gửi email hướng dẫn đặt lại mật khẩu!',
+        auth_reset_title: 'Đặt lại mật khẩu',
+        auth_reset_button: 'Cập nhật mật khẩu',
+        auth_reset_success: '✅ Mật khẩu đã được cập nhật thành công!',
+
+        // Profile
+        profile_title: 'Hồ sơ cá nhân',
+        profile_tab_info: 'Thông tin chung',
+        profile_tab_security: 'Bảo mật',
+        profile_change_password: 'Đổi mật khẩu',
+        profile_current_password: 'Mật khẩu hiện tại',
+        profile_new_password: 'Mật khẩu mới',
+        profile_confirm_new_password: 'Xác nhận mật khẩu mới',
+        profile_update_success: '✅ Cập nhật thông tin thành công!',
+
         // Courses Search
         courses_explore_title: 'Khám phá khóa học',
         courses_explore_desc: 'Hơn 500+ khóa học từ các chuyên gia hàng đầu',
@@ -278,6 +297,25 @@ export const translations = {
         auth_register_tos: 'Terms of Service',
         auth_register_and: 'and',
         auth_register_privacy: 'Privacy Policy',
+
+        // Forgot Password
+        auth_forgot_title: 'Forgot Password',
+        auth_forgot_desc: 'Enter your email to receive a password reset link.',
+        auth_forgot_button: 'Send Request',
+        auth_forgot_success: '✅ Password reset instructions sent to your email!',
+        auth_reset_title: 'Reset Password',
+        auth_reset_button: 'Update Password',
+        auth_reset_success: '✅ Password updated successfully!',
+
+        // Profile
+        profile_title: 'User Profile',
+        profile_tab_info: 'General Info',
+        profile_tab_security: 'Security',
+        profile_change_password: 'Change Password',
+        profile_current_password: 'Current Password',
+        profile_new_password: 'New Password',
+        profile_confirm_new_password: 'Confirm New Password',
+        profile_update_success: '✅ Profile updated successfully!',
 
         // Courses Search
         courses_explore_title: 'Explore Courses',

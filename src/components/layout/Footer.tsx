@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { GraduationCap, Facebook, Youtube, Mail, Phone } from 'lucide-react';
 import { useTranslation } from '@/lib/stores/i18nStore';
 
@@ -58,8 +59,13 @@ export function Footer() {
                     <div>
                         <h4 className="font-semibold mb-4">{t('footer_instructor')}</h4>
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/20 bg-muted shrink-0">
-                                <img src="https://api.dicebear.com/7.x/initials/svg?seed=Victor+Chuyen" alt="Victor Chuyen" className="w-full h-full object-cover" />
+                            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/20 bg-muted shrink-0 relative">
+                                <Image 
+                                    src="https://api.dicebear.com/7.x/initials/svg?seed=Victor+Chuyen" 
+                                    alt="Victor Chuyen" 
+                                    fill
+                                    className="object-cover" 
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-sm text-foreground">Victor Chuyen</p>

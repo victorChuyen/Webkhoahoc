@@ -15,6 +15,9 @@ const nextConfig = {
             'avatars.githubusercontent.com',
             'lh3.googleusercontent.com',
             'via.placeholder.com',
+            'flagcdn.com',
+            'api.dicebear.com',
+            'images.unsplash.com',
         ],
     },
 };

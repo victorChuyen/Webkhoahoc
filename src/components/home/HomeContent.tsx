@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -185,7 +186,9 @@ export default function HomeContent({ featuredCourses, demoCourses }: { featured
                                     </div>
                                     <p className="text-sm text-muted-foreground leading-relaxed mb-5 italic">&quot;{t.text}&quot;</p>
                                     <div className="flex items-center gap-3">
-                                        <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full bg-muted" />
+                                        <div className="w-10 h-10 rounded-full overflow-hidden relative bg-muted">
+                                            <Image src={t.avatar} alt={t.name} fill className="object-cover" />
+                                        </div>
                                         <div>
                                             <p className="font-semibold text-sm">{t.name}</p>
                                             <p className="text-xs text-muted-foreground">{t.role}</p>
@@ -208,20 +211,21 @@ function CourseCard({ course, demo }: { course: Course; demo?: boolean }) {
         <Link href={demo ? '/courses' : `/courses/${course.id}`}>
             <Card className="course-card h-full overflow-hidden group">
                 <div className="relative aspect-video overflow-hidden">
-                    <img
+                    <Image
                         src={course.thumbnail_url || `https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400`}
                         alt={course.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 left-2">
+                    <div className="absolute top-2 left-2 z-10">
                         <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${level.color}`}>
                             {level.label}
                         </span>
                     </div>
                     {course.featured && (
-                        <div className="absolute top-2 right-2 badge-featured">⭐ Hot</div>
+                        <div className="absolute top-2 right-2 badge-featured z-10">⭐ Hot</div>
                     )}
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center z-20">
                         <PlayCircle className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={48} />
                     </div>
                 </div>

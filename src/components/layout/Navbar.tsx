@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { useEffect, useState, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { useAuthStore } from '@/lib/stores/authStore';
 import { useI18nStore, useTranslation } from '@/lib/stores/i18nStore';
@@ -22,7 +23,20 @@ export function Navbar() {
     const [profileOpen, setProfileOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
-    const supabase = createClient();
+    
+    // Use a stable supabase instance
+    const [supabase] = useState(() => createClient());
+
+    const toggleDark = useCallback(() => {
+        if (isDark) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        setIsDark(!isDark);
+    }, [isDark]);
 
     useEffect(() => {
         setMounted(true);
@@ -54,18 +68,7 @@ export function Navbar() {
         });
 
         return () => subscription.unsubscribe();
-    }, []);
-
-    const toggleDark = () => {
-        if (isDark) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-        }
-        setIsDark(!isDark);
-    };
+    }, [clearUser, setUser, supabase]);
 
     const handleLogout = async () => {
         await supabase.auth.signOut();
@@ -136,8 +139,8 @@ export function Navbar() {
                             aria-label="Toggle Language"
                         >
                             {lang === 'vi'
-                                ? <><img src="https://flagcdn.com/w20/vn.png" alt="VN" className="w-4 shadow-sm" /> VN</>
-                                : <><img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 shadow-sm" /> EN</>}
+                                ? <><Image src="https://flagcdn.com/w20/vn.png" alt="VN" width={16} height={12} className="shadow-sm" /> VN</>
+                                : <><Image src="https://flagcdn.com/w20/us.png" alt="EN" width={16} height={12} className="shadow-sm" /> EN</>}
                             <ChevronDown size={14} className="text-muted-foreground" />
                         </button>
 
@@ -147,13 +150,13 @@ export function Navbar() {
                                     onClick={() => toggleLang('vi')}
                                     className={`w-full flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-accent transition-colors ${lang === 'vi' ? 'bg-accent font-semibold' : ''}`}
                                 >
-                                    <img src="https://flagcdn.com/w20/vn.png" alt="VN" className="w-4 shadow-sm" /> Tiếng Việt
+                                    <Image src="https://flagcdn.com/w20/vn.png" alt="VN" width={16} height={12} className="shadow-sm" /> Tiếng Việt
                                 </button>
                                 <button
                                     onClick={() => toggleLang('en')}
                                     className={`w-full flex items-center gap-2 px-3 py-2 text-sm rounded-lg hover:bg-accent transition-colors ${lang === 'en' ? 'bg-accent font-semibold' : ''}`}
                                 >
-                                    <img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 shadow-sm" /> English
+                                    <Image src="https://flagcdn.com/w20/us.png" alt="EN" width={16} height={12} className="shadow-sm" /> English
                                 </button>
                             </div>
                         )}
@@ -174,9 +177,9 @@ export function Navbar() {
                                 onClick={() => { setProfileOpen(!profileOpen); setLangOpen(false); }}
                                 className="flex items-center gap-2 px-3 py-1.5 rounded-xl border border-border hover:border-primary/50 hover:bg-accent transition-all"
                             >
-                                <div className="w-8 h-8 rounded-full bg-brand-gradient flex items-center justify-center text-white text-xs font-bold shrink-0">
+                                <div className="w-8 h-8 rounded-full bg-brand-gradient flex items-center justify-center text-white text-xs font-bold shrink-0 relative overflow-hidden">
                                     {user.avatar_url
-                                        ? <img src={user.avatar_url} alt="" className="w-full h-full rounded-full object-cover" />
+                                        ? <Image src={user.avatar_url} alt="" fill className="object-cover" />
                                         : getInitials(user.full_name)
                                     }
                                 </div>
@@ -268,13 +271,13 @@ export function Navbar() {
                                 onClick={() => toggleLang('vi')}
                                 className={`flex items-center gap-1.5 px-2 py-1 text-sm rounded-lg transition-colors ${lang === 'vi' ? 'bg-accent font-semibold' : 'text-muted-foreground hover:bg-accent'}`}
                             >
-                                <img src="https://flagcdn.com/w20/vn.png" alt="VN" className="w-4 shadow-sm" /> VN
+                                <Image src="https://flagcdn.com/w20/vn.png" alt="VN" width={16} height={12} className="shadow-sm" /> VN
                             </button>
                             <button
                                 onClick={() => toggleLang('en')}
                                 className={`flex items-center gap-1.5 px-2 py-1 text-sm rounded-lg transition-colors ${lang === 'en' ? 'bg-accent font-semibold' : 'text-muted-foreground hover:bg-accent'}`}
                             >
-                                <img src="https://flagcdn.com/w20/us.png" alt="EN" className="w-4 shadow-sm" /> EN
+                                <Image src="https://flagcdn.com/w20/us.png" alt="EN" width={16} height={12} className="shadow-sm" /> EN
                             </button>
                         </div>
                     </div>
