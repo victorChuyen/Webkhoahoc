@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -151,11 +152,14 @@ export default async function StudentDashboardPage() {
                                         <Card key={enrollment.id} className="overflow-hidden">
                                             <CardContent className="p-0">
                                                 <div className="flex gap-4 p-4">
-                                                    <img
-                                                        src={course?.thumbnail_url || 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200'}
-                                                        alt={course?.title}
-                                                        className="w-24 h-18 rounded-xl object-cover shrink-0"
-                                                    />
+                                                    <div className="w-24 h-18 rounded-xl overflow-hidden shrink-0 relative">
+                                                        <Image
+                                                            src={course?.thumbnail_url || 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=200'}
+                                                            alt={course?.title || ''}
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
                                                     <div className="flex-1 min-w-0">
                                                         <h3 className="font-semibold text-sm leading-tight mb-1 line-clamp-2">
                                                             {course?.title}
@@ -212,11 +216,14 @@ export default async function StudentDashboardPage() {
                                         <Card key={payment.id}>
                                             <CardContent className="p-4">
                                                 <div className="flex items-start gap-3">
-                                                    <img
-                                                        src={(payment as any).course?.thumbnail_url || ''}
-                                                        alt=""
-                                                        className="w-12 h-9 rounded-lg object-cover shrink-0"
-                                                    />
+                                                    <div className="w-12 h-9 rounded-lg overflow-hidden shrink-0 relative">
+                                                        <Image
+                                                            src={(payment as any).course?.thumbnail_url || 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100'}
+                                                            alt=""
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                    </div>
                                                     <div className="flex-1 min-w-0">
                                                         <p className="text-xs font-medium line-clamp-1">{(payment as any).course?.title}</p>
                                                         <p className="text-xs text-muted-foreground">{formatDate(payment.created_at)}</p>

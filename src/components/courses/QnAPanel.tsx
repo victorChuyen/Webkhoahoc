@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import { createClient } from '@/lib/supabase/client';
 import { QnAComment } from '@/types';
 import { Button } from '@/components/ui/button';
@@ -26,13 +27,7 @@ export default function QnAPanel({ courseId, moduleId, currentUserId }: QnAPanel
     const [replyingTo, setReplyingTo] = useState<string | null>(null);
     const [replyContent, setReplyContent] = useState('');
 
-    useEffect(() => {
-        if (moduleId) {
-            fetchComments();
-        }
-    }, [moduleId]);
-
-    const fetchComments = async () => {
+    const fetchComments = useCallback(async () => {
         setIsLoading(true);
         // We fetch all comments for this module and course
         // Also joining the user data to get avatar and name
@@ -79,7 +74,13 @@ export default function QnAPanel({ courseId, moduleId, currentUserId }: QnAPanel
             setComments(roots);
         }
         setIsLoading(false);
-    };
+    }, [courseId, moduleId, supabase]);
+
+    useEffect(() => {
+        if (moduleId) {
+            fetchComments();
+        }
+    }, [moduleId, fetchComments]);
 
     const handleSubmit = async (e: React.FormEvent, parentId: string | null = null) => {
         e.preventDefault();
@@ -162,9 +163,14 @@ export default function QnAPanel({ courseId, moduleId, currentUserId }: QnAPanel
         return (
             <div key={comment.id} className={`flex gap-3 w-full ${isReply ? 'mt-3 pl-8 border-l-2 border-border/50' : 'mt-5'}`}>
                 {/* Avatar Fallback */}
-                <div className={`shrink-0 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold overflow-hidden ${isReply ? "w-6 h-6 text-[10px]" : "w-8 h-8 text-xs"}`}>
+                <div className={`shrink-0 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold overflow-hidden relative ${isReply ? "w-6 h-6 text-[10px]" : "w-8 h-8 text-xs"}`}>
                     {comment.user?.avatar_url ? (
-                        <img src={comment.user.avatar_url} alt="avatar" className="w-full h-full object-cover" />
+                        <Image 
+                            src={comment.user.avatar_url} 
+                            alt="avatar" 
+                            fill
+                            className="object-cover" 
+                        />
                     ) : (
                         comment.user?.full_name?.charAt(0) || 'U'
                     )}

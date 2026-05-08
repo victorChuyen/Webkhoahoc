@@ -62,15 +62,9 @@ export default function CourseLearnPage() {
             await supabase.rpc('update_streak', { user_id_param: user.id });
         };
         load();
-    }, [courseId]);
+    }, [courseId, router, supabase]);
 
-    useEffect(() => {
-        if (activeModule) {
-            loadNotes(activeModule.id);
-        }
-    }, [activeModule]);
-
-    const loadNotes = async (moduleId: string) => {
+    const loadNotes = useCallback(async (moduleId: string) => {
         const { data: { user } } = await supabase.auth.getUser();
         if (!user) return;
         const { data } = await supabase
@@ -81,7 +75,13 @@ export default function CourseLearnPage() {
             .eq('module_id', moduleId)
             .order('timestamp_sec', { ascending: true });
         if (data) setNotes(data);
-    };
+    }, [courseId, supabase]);
+
+    useEffect(() => {
+        if (activeModule) {
+            loadNotes(activeModule.id);
+        }
+    }, [activeModule, loadNotes]);
 
     const handleAddNote = async () => {
         if (!newNote.trim() || !activeModule) return;
